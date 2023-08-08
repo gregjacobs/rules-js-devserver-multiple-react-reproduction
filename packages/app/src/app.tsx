@@ -1,14 +1,8 @@
-import { useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { ErrorMessage } from '@my-org/error-message'; // 1st party package
+import { Button } from '@my-org/button'; // 1st party package
 
 const App: React.FC = () => {
-    // trigger multiple copies of react issue
-    useState(3);
-
-    return <>
-        <div><ErrorMessage message="Something went wrong!" /></div>
-    </>;
+    return <Button>If you see me, you have fixed the issue!</Button>;
 }
 
 // -----------------

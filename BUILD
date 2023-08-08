@@ -6,19 +6,10 @@ npm_link_all_packages(
     name = "node_modules"
 )
 
+# Link 1st party package
 npm_link_package(
     name = "node_modules/@my-org/button",
     src = "//packages/@my-org/button:package"
-)
-
-npm_link_package(
-    name = "node_modules/@my-org/button-with-description",
-    src = "//packages/@my-org/button-with-description:package"
-)
-
-npm_link_package(
-    name = "node_modules/@my-org/error-message",
-    src = "//packages/@my-org/error-message:package"
 )
 
 ts_config(

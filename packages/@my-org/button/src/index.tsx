@@ -1,11 +1,11 @@
 import { useState, FC, PropsWithChildren } from 'react';
 
 /**
- * Very complex button component
+ * Clearly a very complex button component.
  */
 export const Button: FC<ButtonProps> = props => {
-    // trigger multiple copies of react issue
-    useState(1);
+    // Use a hook to trigger the "multiple copies of react" issue
+    useState(42);
 
     return <button>{props.children}</button>;
 };

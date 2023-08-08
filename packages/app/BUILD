@@ -7,10 +7,10 @@ webpack_devserver(
     entry_point = "src/app.tsx",
     data = [
         "tsconfig.json",
-        "//:tsconfig",
+        "//:tsconfig", # Needed as it is the extension of the local tsconfig.json. See: https://github.com/aspect-build/rules_ts/issues/190
 
         # 1st-party dependency
-        "//:node_modules/@my-org/error-message",
+        "//:node_modules/@my-org/button",
 
         # 3rd-party dependencies
         "//:node_modules/@types/react",

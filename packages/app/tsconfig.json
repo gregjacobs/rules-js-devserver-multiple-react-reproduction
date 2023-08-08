@@ -3,9 +3,7 @@
     "compilerOptions": {
         "paths": {
             "@my-org/button": ["../@my-org/button/src"],
-            "@my-org/button-with-description": ["../@my-org/button-with-description/src"],
-            "@my-org/error-message": ["../@my-org/error-message/src"],
-        }
+        },
     },
     "include": ["src/**/*"]
 }
