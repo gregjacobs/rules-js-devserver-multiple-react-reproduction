@@ -12,7 +12,7 @@ alias(
 npm_package(
     name = "package",
     visibility = ["//visibility:public"],
-    package = "button",
+    package = "@my-org/button",
     srcs = [":library"],
     out = "package",
     include_runfiles = False,
@@ -38,7 +38,7 @@ write_file(
     out = "package.json",
     content = [
         '{',
-        '    "name": "button",',
+        '    "name": "@my-org/button",',
         '    "version": "0.0.0",',
         '    "main": "./dist/index.js",',
         '    "module": "./dist/index.js",',

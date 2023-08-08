@@ -10,7 +10,7 @@ webpack_devserver(
         "//:tsconfig",
 
         # 1st-party dependency
-        "//:node_modules/error-message",
+        "//:node_modules/@my-org/error-message",
 
         # 3rd-party dependencies
         "//:node_modules/@types/react",

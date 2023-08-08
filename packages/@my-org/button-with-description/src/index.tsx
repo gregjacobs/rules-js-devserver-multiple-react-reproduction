@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import { Button } from 'button';  // 1st-party package
+import { Button } from '@my-org/button';  // 1st-party package
 
 /**
  * Simple component which displays a message and a button

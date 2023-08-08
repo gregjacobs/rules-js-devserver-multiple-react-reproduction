@@ -5,14 +5,14 @@ load("@bazel_skylib//rules:write_file.bzl", "write_file")
 
 # Convenience alias for bazel build
 alias(
-    name = "error-message",
+    name = "button-with-description",
     actual = ":package"
 )
 
 npm_package(
     name = "package",
     visibility = ["//visibility:public"],
-    package = "error-message",
+    package = "@my-org/button-with-description",
     srcs = [":library"],
     out = "package",
     include_runfiles = False,
@@ -38,7 +38,7 @@ write_file(
     out = "package.json",
     content = [
         '{',
-        '    "name": "error-message",',
+        '    "name": "@my-org/button-with-description",',
         '    "version": "0.0.0",',
         '    "main": "./dist/index.js",',
         '    "module": "./dist/index.js",',
@@ -57,7 +57,7 @@ ts_project(
         "src/index.tsx"
     ],
     deps = [
-        "//:node_modules/button-with-description",  # Our custom package
+        "//:node_modules/@my-org/button",  # Our custom package
         "//:node_modules/@types/react",
         "//:node_modules/react",
     ],

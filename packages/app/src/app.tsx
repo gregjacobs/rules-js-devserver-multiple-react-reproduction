@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { ErrorMessage } from 'error-message'; // 1st party package
+import { ErrorMessage } from '@my-org/error-message'; // 1st party package
 
 const App: React.FC = () => {
     // trigger multiple copies of react issue
