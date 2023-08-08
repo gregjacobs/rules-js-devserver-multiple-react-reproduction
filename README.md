@@ -1,4 +1,4 @@
-Reproduction of an issue in the (quite excellent) [rules_js](https://github.com/aspect-build/rules_js) where bundlers inside `js_run_devserver` can see two separate node_modules trees.
+Reproduction of an issue in the (quite excellent) [rules_js](https://github.com/aspect-build/rules_js) where bundlers inside `js_run_devserver` can see two separate node_modules trees. See https://github.com/aspect-build/rules_js/issues/1204
 
 ## To reproduce the issue
 
