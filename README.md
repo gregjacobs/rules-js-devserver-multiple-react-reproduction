@@ -36,6 +36,6 @@ Webpack is seeing two distinct `node_modules` directories because, in the `js_ru
 And therefore it seems that transitive dependencies of the scoped `@my-org/button` package are also resolved under the runfiles node_modules directory, so we end up with:
 
 1. `$(bazel info bazel-bin)/node_modules/react` (from the Webpack app itself)
-2. `$(bazel info bazel-bin)/packages/app/serve.sh.runfiles/__main__/node_modules/react` (transitive dependency of the libary component used in the app)
+2. `$(bazel info bazel-bin)/packages/app/serve.sh.runfiles/__main__/node_modules/react` (transitive dependency of @my-org/button)
 
 **Update**: I took the above screenshots with green and red boxes, but I'm realizing now that they should probably be reversed. All symlinks should probably point to `node_modules` in the runfiles tree if I'm not mistaken about this.
