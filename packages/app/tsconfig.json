@@ -1,0 +1,11 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "paths": {
+            "button": ["../button/src"],
+            "button-with-description": ["../button-with-description/src"],
+            "error-message": ["../error-message/src"],
+        }
+    },
+    "include": ["src/**/*"]
+}
